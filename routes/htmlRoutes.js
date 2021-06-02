@@ -9,6 +9,6 @@ router.get('/notes.html',(res,req)=>{
 });
 
 //refrence to the index.html
-router.get('index.html',(res,req)=>{
+router.get('*',(res,req)=>{
     res.sendFile(path.join(__dirname,'/index.js'));
 });
