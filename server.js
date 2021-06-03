@@ -2,13 +2,13 @@
 //2.) and routes from both the api and notes html
 //3.) requirement of the port server
 const express= require('express').Router();
-//const apiRoutes= require('./routes/apiRoutes');
+const apiRoutes= require('./routes/apiRoutes');
 const htmlRoutes= require('./routes/htmlRoutes')
-const PORT= process.env.PORT||3000;
+
 
 //we need to initialize the app
 const app =express();
-
+const PORT= process.env.PORT || 3000;
 
 
 app.use(express.json());
